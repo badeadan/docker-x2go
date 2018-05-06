@@ -1,7 +1,7 @@
 ## This repository holds a docker recipe for the x2go server.
 
 
-[![Build Status](https://travis-ci.org/spielhuus/x2go.svg?branch=master)](https://travis-ci.org/spielhuus/x2go)
+[![Build Status](https://travis-ci.org/spielhuus/docker-x2go.svg?branch=master)](https://travis-ci.org/spielhuus/docker-x2go)
 [![GitHub version](https://badge.fury.io/gh/spielhuus%2Fx2go.svg)](https://hub.docker.com/r/spielhuus/x2go)
 
 [Docker](https://docker.io/) recipe for [x2go](https://wiki.x2go.org/doku.php) project
