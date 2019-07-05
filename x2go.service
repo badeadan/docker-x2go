@@ -1,0 +1,8 @@
+[Unit]
+Description=X2Go Session
+
+[Service]
+ExecStart=/bin/bash -c "cd /mnt/repo/docker/x2go && ./up.sh"
+
+[Install]
+WantedBy=default.target

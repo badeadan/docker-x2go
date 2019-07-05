@@ -1,4 +1,5 @@
 #!/bin/bash
+. env.sh
 [[ -z "${USER}" ]] && { echo "missing USER"; exit 1; }
 [[ -z "${UID}" ]] && { echo "missing UID"; exit 1; }
 [[ -z "${PASSWORD}" ]] && { echo "missing PASSWORD"; exit 1; }
@@ -6,7 +7,7 @@
 export CONTAINER=x2go-${USER}
 docker kill ${CONTAINER}
 docker container rm ${CONTAINER}
-docker run \
+docker run -d=false --rm \
     --name ${CONTAINER} -p ${SSH_PORT}:22 -itd \
     --env="USER=${USER}" \
     --env="ID=${ID}" \
